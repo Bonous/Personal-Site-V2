@@ -1,0 +1,106 @@
+:root {
+  --main-text-colour: rgb(230, 230, 230);
+  --hover-text-colour: rgb(162, 134, 255);
+}
+
+body,
+body * {
+  margin: unset;
+  padding: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  font-size: unset;
+  background: #2a2a2a;
+}
+
+/*#region fonts*/
+@font-face {
+  font-family: 'Neon';
+  src: url(fonts/Neon-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url(fonts/Mulish/Mulish-Light.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url(fonts/Mulish/Mulish-LightItalic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url(fonts/Mulish/Mulish-ExtraLight.woff) format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url(fonts/Mulish/Mulish-ExtraLight.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*#endregion*/
+/*#region HOME*/
+.home-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hp-maintext {
+  font-family: 'Neon';
+  font-size: 50px;
+  color: var(--main-text-colour);
+  padding: 0;
+  margin: 0 0 7px 0;
+}
+
+.hp-smalltext {
+  font-family: 'Mulish';
+  font-size: 50px;
+  color: var(--main-text-colour);
+  padding: 0;
+  margin: 0;
+}
+
+.mp-frontlink {
+  font-family: 'Mulish';
+  text-decoration: none;
+  padding-right: 45px;
+  padding-left: 45px;
+  font-size: 25px;
+  color: var(--main-text-colour);
+}
+
+.mp-icon {
+  margin-bottom: 6px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+.mp-frontlink:hover {
+  color: var(--hover-text-colour);
+}
+
+/*#endregion*/
+/*# sourceMappingURL=main.css.map */
