@@ -44,13 +44,20 @@ body * {
 
 @font-face {
   font-family: 'Mulish';
-  src: url(fonts/Mulish/Mulish-ExtraLight.woff) format("woff");
+  src: url(fonts/Mulish/Mulish-SemiBold.woff) format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Mulish';
+  src: url(fonts/Mulish/Mulish-Bold.woff) format("woff");
+  font-weight: bolder;
+  font-style: normal;
+}
+
 /*#endregion*/
-/*#region HOME*/
+/*#region index*/
 .home-page {
   position: relative;
   width: 100vw;
@@ -78,6 +85,7 @@ body * {
 .hp-smalltext {
   font-family: 'Mulish';
   font-size: 50px;
+  font-weight: lighter;
   color: var(--main-text-colour);
   padding: 0;
   margin: 0;
@@ -85,21 +93,92 @@ body * {
 
 .mp-frontlink {
   font-family: 'Mulish';
+  font-size: 25px;
+  font-weight: lighter;
+  color: var(--main-text-colour);
   text-decoration: none;
   padding-right: 45px;
   padding-left: 45px;
-  font-size: 25px;
-  color: var(--main-text-colour);
 }
 
-.mp-icon {
-  margin-bottom: 6px;
+.link-icon {
+  margin-bottom: 5px;
   width: 30px;
   vertical-align: middle;
 }
 
 .mp-frontlink:hover {
   color: var(--hover-text-colour);
+}
+
+/*#endregion*/
+/*#region nav_bar*/
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-link {
+  font-family: 'Mulish';
+  font-size: 25px;
+  font-weight: lighter;
+  color: var(--main-text-colour);
+  text-decoration: none;
+  padding-right: 3vw;
+  padding-left: 3vw;
+}
+
+.nav-link:hover {
+  color: var(--hover-text-colour);
+}
+
+.sg-icon {
+  vertical-align: middle;
+}
+
+/*#endregion*/
+/*#region about_me*/
+.about-me-hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr minmax(0, 1300px) 1fr;
+      grid-template-columns: 1fr minmax(0, 1300px) 1fr;
+  height: calc(100vh - 132px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me-texts {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.about-me-title {
+  font-family: 'Mulish';
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--main-text-colour);
+  padding: 0;
+  margin: 0;
+}
+
+.about-me-bio {
+  font-family: 'Mulish';
+  font-size: 30px;
+  font-weight: lighter;
+  color: var(--main-text-colour);
+  padding: 0;
+  margin: 0;
 }
 
 /*#endregion*/
