@@ -49,8 +49,8 @@ body * {
 
 @font-face {
   font-family: 'Mulish';
-  src: url(fonts/Mulish/Mulish-LightItalic.woff) format("woff");
-  font-weight: normal;
+  src: url(fonts/Mulish/Mulish-ExtraLightItalic.woff) format("woff");
+  font-weight: lighter;
   font-style: italic;
 }
 
@@ -295,7 +295,6 @@ body * {
   padding-right: 30px;
   padding-left: 30px;
   justify-items: center;
-  align-items: center;
 }
 
 .contact-me-texts {
@@ -327,6 +326,67 @@ body * {
 
 .contact-me-link:hover {
   color: var(--hover-text-colour);
+}
+
+/*#endregion*/
+/*#region project_blogs*/
+.project-blog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr minmax(0, 1330px) 1fr;
+      grid-template-columns: 1fr minmax(0, 1330px) 1fr;
+  height: calc(100vh - 132px);
+  padding-right: 30px;
+  padding-left: 30px;
+  justify-items: start;
+}
+
+.project-blog-page {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.project-blog-title {
+  font-family: 'Mulish';
+  font-size: 40px;
+  font-weight: normal;
+  color: var(--main-text-colour);
+  padding: 0;
+  margin: 0;
+}
+
+.project-blog-subtitle {
+  font-family: 'Mulish';
+  font-size: 35px;
+  font-weight: normal;
+  color: var(--main-text-colour);
+  padding: 0;
+  margin: 0;
+}
+
+.project-blog-normal-text {
+  font-family: 'Mulish';
+  font-size: 25px;
+  font-weight: lighter;
+  color: var(--main-text-colour);
+  padding: 0;
+  margin: 0;
+}
+
+.iframe-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.project-figure-caption {
+  font-family: 'Mulish';
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: italic;
+  color: var(--main-text-colour);
+  padding: 0;
+  margin: 0;
 }
 
 /*#endregion*/
