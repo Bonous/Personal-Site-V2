@@ -11,7 +11,6 @@ body * {
     font-size: unset;
     background: rgb(42, 42, 42);
     overflow-x: hidden;
-
 }
 
 /*#region scroll_bar */
@@ -309,16 +308,15 @@ body * {
 
 /*#region project_blogs*/
 
-.project-blog {
+.project-blog-container {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1330px) 1fr;
-    height: calc(100vh - 132px);
     padding-right: 30px;
     padding-left: 30px;
     justify-items: start;
 }
 
-.project-blog-page {
+.project-blog {
     grid-column: 2 / 3;
 }
 
@@ -362,6 +360,40 @@ body * {
     color: var(--main-text-colour);
     padding: 0;
     margin: 0;
+}
+
+.project-blog-link-name {
+    font-family: 'Mulish';
+    font-size: 25px;
+    font-weight: lighter;
+    color: var(--main-text-colour);
+    padding: 0;
+    margin: 0;
+}
+
+.project-blog-link {
+    font-family: 'Mulish';
+    font-size: 25px;
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--main-text-colour);
+    padding: 0;
+    margin: 0;
+}
+
+.project-blog-link:hover {
+    color: var(--hover-text-colour);
+}
+
+.project-blog-link {
+    color: var(--main-text-colour);
+}
+
+ul li::before {
+    margin-left: 1em;
+    list-style-position: inside;
+    content: "\2022";
+    color: rgb(230, 230, 230);
 }
 
 /*#endregion*/
